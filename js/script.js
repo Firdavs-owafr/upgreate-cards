@@ -2,7 +2,7 @@ let card = prompt('karta kiriting')
 let cardSec=card.slice(0, 4) + "********"+ card.slice(12, 15)
 function cardNumber() {
 
-   if(card.length ==16 && !isNaN(+card) && card== null ){
+   if(card.length ==16 && !isNaN(+card)){
     if(card.startsWith('8600')){
         console.log(cardSec)
         console.log('Bu karta Uzcard');
